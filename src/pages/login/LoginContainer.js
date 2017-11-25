@@ -16,6 +16,9 @@ export default class LoginContainer extends Component {
         return (
             <div>
                 <p>Login page</p>
+                <input placeholder={'username'}></input> <br/>
+                <input placeholder={'password'}></input> <br/>
+                <button>{'Login'}</button>
             </div>
         )
     }
