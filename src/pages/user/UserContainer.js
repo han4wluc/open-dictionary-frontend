@@ -16,7 +16,6 @@ export default class UserContainer extends Component {
         var total = 20
         var accepted = 16
         var rejected = 4
-        var acceptanceRate = accepted/total
         var username="placeholder1"
         var email="placeholder@placeholder.com"
         return (
@@ -54,7 +53,7 @@ export default class UserContainer extends Component {
                 <div class = "ele">
                   <h2> Acceptance Rate </h2>
                   <br/>
-                  <h3> {100*acceptanceRate} % </h3>
+                  <h3> {100*accepted/total}% </h3>
                 </div>
               </div>
             </div>
