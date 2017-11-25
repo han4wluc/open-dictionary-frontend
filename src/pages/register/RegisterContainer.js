@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 //Import css
-import './Login.css';
+import './Register.css';
 
 import {Link} from 'react-router-dom';
 
@@ -15,15 +15,8 @@ export default class LoginContainer extends Component {
     render() {
         return (
             <div>
-                <p>Please Log In</p>
-                <form>
-                  {"Email:"}<br/>
-                  <input type="text" name="email"/><br/>
-                  Password:<br/>
-                  <input type="text" name="password"/>
-                </form>
+                <p>Login page</p>
             </div>
-
         )
     }
 
