@@ -1,0 +1,31 @@
+
+.page-name {
+    margin: 0;
+    background: lightgrey;
+    padding: 10px;
+}
+
+.nav {
+    display: inline;
+}
+
+.nav-object {
+	font-size: 15px;
+    margin: 0.5%;
+    margin-top: 1%;
+    list-style-type: none;
+    display: inline;
+    float: right;
+    font-family: 'Source Sans Pro ExtraLight', sans-serif;
+	font-weight: 100;
+}
+
+.ins {
+    margin-top: 40%;
+
+}
+
+a {
+    color :black;
+    text-decoration: none;
+}

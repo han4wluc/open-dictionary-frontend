@@ -16,16 +16,17 @@ export default class HomeContainer extends Component {
 
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1 className="App-title">Welcome to React</h1>
-                </header>
-                <p className="App-intro">
-                To get started, edit <code>src/App.js</code> and save to reload.
-                </p>
+            <div class = "">
+            <header>
+                <h1 class = "page-name"> Open Dictionary
+                <ul class = "nav">
+                    <li class = "nav-object"><a href = "#"> Register </a></li>
+                    <li class = "nav-object"><a href = "#"> Sign in </a></li>
+                </ul>
+                </h1>
+            </header>
             </div>
         )
     }
-    
+
 }
