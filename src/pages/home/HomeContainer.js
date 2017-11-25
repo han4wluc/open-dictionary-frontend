@@ -15,21 +15,10 @@ export class HomeContainer extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
-        // this.props.dispatch({type: 'GET_DATA_REQUEST'})
-        // this.props.dispatch(()=>{
-        //     return {
-        //         type : "GET_DATA_REQUEST",
-        //         payload: {
-
-        //         }
-        //     }
-        // })
         this.props.logic("GET_DATA_REQUEST", {})
     }
 
     render() {
-        console.log(this.props.home);
         return (
             <div class = "">
             <header>

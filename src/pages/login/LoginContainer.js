@@ -10,28 +10,50 @@ export class LoginContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            email: '',
+            password: ''
         };
+        this.login = this.login.bind(this);
+        this.onChange = this.onChange.bind(this);
     }
 
     componentDidMount() {
         console.log(this.props);
     }
 
+    login(e) {
+        const { email, password } = this.state;
+        e.preventDefault();
+        
+        this.props.logic("LOGIN_REQUEST", {
+            email,
+            password
+        });
+    }
+
+    onChange(e) {
+        const { value, name } = e.target;
+        this.setState({
+            [name]: value
+        })
+    }
+
     render() {
+        const { email, password } = this.state;
         return (
             <div>
                 <p>Please Log In</p>
-                <form>
+                <form onSubmit={this.login}>
                   {"Email:"}<br/>
-                  <input type="text" name="email"/><br/>
+                  <input type="text" name="email" value={email} onChange={this.onChange}/><br/>
                   Password:<br/>
-                  <input type="text" name="password"/>
+                  <input type="password" name="password" value={password} onChange={this.onChange}/>
+                  <button type="submit">Login</button>
                 </form>
             </div>
 
         )
     }
-<<<<<<< HEAD
     
 }
 
@@ -45,7 +67,3 @@ export default connect(mapStateToProps, {
         return {type, payload}
     }
 })(withCookies(LoginContainer));
-=======
-
-}
->>>>>>> a1c07315f62989411290f42c524c1be15ab20108
