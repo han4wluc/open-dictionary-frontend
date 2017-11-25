@@ -13,9 +13,50 @@ export default class UserContainer extends Component {
     }
 
     render() {
+        var total = 20
+        var accepted = 16
+        var rejected = 4
+        var acceptanceRate = accepted/total
+        var username="placeholder1"
+        var email="placeholder@placeholder.com"
         return (
-            <div>
-                <p>User Profile page</p>
+          <div>
+          <div class = "">
+          <header>
+              <h1 class = "page-name"> Open Dictionary
+              <ul class = "nav">
+                  <li class = "nav-object"><a href = "#"> Register </a></li>
+                  <li class = "nav-object"><a href = "#"> Sign in </a></li>
+              </ul>
+              </h1>
+          </header>
+          </div>
+              <div className = "body">
+                <div class = "userInfo">
+                  <h3> Username: {username} </h3>
+                  <h3> Email: {email} </h3>
+                </div>
+                <div class = "ele">
+                  <h2> Total Submissions </h2>
+                  <br/>
+                  <h3> {total} </h3>
+                </div>
+                <div class = "ele">
+                  <h2> Accepted Submissions </h2>
+                  <br/>
+                  <h3> {accepted} </h3>
+                </div>
+                <div class = "ele">
+                  <h2> Rejected Submissions </h2>
+                  <br/>
+                  <h3> {rejected} </h3>
+                </div>
+                <div class = "ele">
+                  <h2> Acceptance Rate </h2>
+                  <br/>
+                  <h3> {100*acceptanceRate} % </h3>
+                </div>
+              </div>
             </div>
         )
     }
