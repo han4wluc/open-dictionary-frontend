@@ -20,13 +20,18 @@ export class LoginContainer extends Component {
     render() {
         return (
             <div>
-                <p>Login page</p>
-                <input placeholder={'username'}></input> <br/>
-                <input placeholder={'password'}></input> <br/>
-                <button>{'Login'}</button>
+                <p>Please Log In</p>
+                <form>
+                  {"Email:"}<br/>
+                  <input type="text" name="email"/><br/>
+                  Password:<br/>
+                  <input type="text" name="password"/>
+                </form>
             </div>
+
         )
     }
+<<<<<<< HEAD
     
 }
 
@@ -40,3 +45,7 @@ export default connect(mapStateToProps, {
         return {type, payload}
     }
 })(withCookies(LoginContainer));
+=======
+
+}
+>>>>>>> a1c07315f62989411290f42c524c1be15ab20108

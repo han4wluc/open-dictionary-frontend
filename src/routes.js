@@ -5,6 +5,7 @@ import {Route} from 'react-router';
 import Home from './pages/home/HomeContainer';
 import Login from './pages/login/LoginContainer';
 import User from './pages/user/UserContainer';
+import Register from './pages/register/RegisterContainer';
 
 export default (
     <div>
@@ -25,6 +26,9 @@ export default (
                 <a class="nav-link" href="/login">Login</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Sign Out</a>
               </li>
             </ul>
@@ -33,5 +37,6 @@ export default (
         <Route exact path="/" component={Home}/>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/user" component={User}/>
+        <Route exact path="/register" component={Register}/>
     </div>
 );
