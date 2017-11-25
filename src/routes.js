@@ -6,6 +6,7 @@ import Home from './pages/home/HomeContainer';
 import Login from './pages/login/LoginContainer';
 import User from './pages/user/UserContainer';
 import Register from './pages/register/RegisterContainer';
+import Addword from './pages/addword/AddwordContainer';
 
 export default (
     <div>
@@ -21,6 +22,9 @@ export default (
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/user">User</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/addword">Addword</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/login">Login</a>
