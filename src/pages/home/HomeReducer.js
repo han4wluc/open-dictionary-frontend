@@ -7,10 +7,10 @@ const initialState = {
 };
 
 export default createReducer(initialState, {
-    GET_DATA_REQUEST: (state, payload, action) => {
+    SET_DATA: (state, payload, action) => {
         return {
             ...state,
-            data: payload.value
+            ...action.payload.data
         }
     }
 });

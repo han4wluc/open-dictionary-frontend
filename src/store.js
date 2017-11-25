@@ -3,18 +3,21 @@
  */
 import {createStore, applyMiddleware, compose} from 'redux';
 import reducers from './reducers';
-// import thunk from 'redux-thunk';
+import {createLogicMiddleware} from 'redux-logic';
+import Logics from './logic';
 
+const logicMiddleware = createLogicMiddleware(Logics);
 
 export function configureStore(initialState = {}) {
     // Middleware and store enhancers
-    const enhancers = [];
+    
+    const middleware = applyMiddleware(
+        logicMiddleware
+    );
 
-    const middleware = [];
+    const enhancer = middleware;
 
-    enhancers.push(...middleware);
-
-    const store = createStore(reducers, initialState, compose(...enhancers));
+    const store = createStore(reducers, initialState, enhancer);
 
     return store;
 }
