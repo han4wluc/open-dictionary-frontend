@@ -1,0 +1,21 @@
+.ele
+{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 2.5%;
+  padding-left: 1%;
+  padding-top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #ffffcc;
+  height: 150px;
+  width: 80%;
+}
+.userInfo
+{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 2.5%;
+  padding-left: 1%;
+  padding-top: 10px;
+}
